@@ -33,8 +33,8 @@ class TurtleSpockTest extends Specification {
             'N' == turtle.getDirection()
 
         and:
-            5 == turtle.getRow()
-            5 == turtle.getColumn()
+            5 == turtle.getY()
+            5 == turtle.getX()
     }
 
     def 'Rotate Right'() {
@@ -66,8 +66,8 @@ class TurtleSpockTest extends Specification {
             'N' == turtle.getDirection()
 
         and:
-            5 == turtle.getRow()
-            5 == turtle.getColumn()
+            5 == turtle.getY()
+            5 == turtle.getX()
     }
 
     def 'Forward'() {
@@ -84,19 +84,19 @@ class TurtleSpockTest extends Specification {
             turtleE.execute('F' as char);
 
         then:
-            4 == turtleN.getRow()
-            5 == turtleN.getColumn()
+            4 == turtleN.getY()
+            5 == turtleN.getX()
 
         and:
-            5 == turtleW.getRow()
-            4 == turtleW.getColumn()
+            5 == turtleW.getY()
+            4 == turtleW.getX()
 
         and:
-            6 == turtleS.getRow()
-            5 == turtleS.getColumn()
+            6 == turtleS.getY()
+            5 == turtleS.getX()
 
         and:
-            5 == turtleE.getRow()
-            6 == turtleE.getColumn()
+            5 == turtleE.getY()
+            6 == turtleE.getX()
     }
 }
